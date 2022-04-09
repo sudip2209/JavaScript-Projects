@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>snake_game</title>
+    <style>
+    	#canvas1{
+    		background-image: url("sudip/bg_snake_game.jpg");
+    		border: 12px solid green;
+    	}
+    	.at_bottom{
+    		background-color: white;
+    		width: 800px;
+    		height: 600px;
+    		margin-top: 250px;
+            margin-left: 100px;
+            
+    	}
+        .up{
+            background-color: white;
+            width: 800px;
+            height: 200px;           
+        }
+        .mid{
+            background-color: white;
+            width: 800px;
+            height: 200px;           
+        }
+        .down{
+            background-color: white;
+            width: 800px;
+            height: 200px;           
+        }
+        .mid1{
+            width: 200px;
+            height: 133px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+	<canvas id="canvas1"></canvas>
+	<script src="snake_game.js"></script>
+    <div class="at_bottom">
+        <div class="up">
+            <img class="left_img" src="sudip/up.png" alt="HTML5 Icon" style="width:200px;height:100px;padding-left: 315px;padding-top: 10px">
+        </div>
+        <div class="mid">
+        <img src="sudip/left.png" alt="HTML5 Icon" style="width:100px;height:200px;padding-left:10px;padding-top: 1px">
+            <img src="sudip/right.png" alt="HTML5 Icon" style="width:100px;height:200px;padding-left: 575px;padding-top: 1px;">
+        </div>
+        <div class="down">
+            <img src="sudip/down.png" alt="HTML5 Icon" style="width:200px;height:100px;padding-left: 315px;padding-top: 60px;">
+        </div>
+    </div>
+</body>
+</html>
