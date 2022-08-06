@@ -55,7 +55,6 @@ function updateMap(key,val){
         // let temp=contactMap.get(key);
         // temp.push(val);
         // localStorage.setItem('myMap',temp);
-        console.log(contactMap.get(key).length);
     }
 }
 
@@ -83,6 +82,11 @@ function callInfo(){
     document.getElementById('m2').innerText="";
     let contactMap=new Map(JSON.parse(localStorage.getItem('myMap')));
     let arr=contactMap.get(no);
+    if(arr==undefined){
+        document.getElementById('m2').innerText="Record Not Found !!";
+        document.form2.reset();
+        return;
+    }
     let html='';
     for(let i=arr.length-1;i>=0;i--){
         html+=`<tr class="btr"><td>${arr[i]}</td></tr>`;
