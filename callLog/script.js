@@ -6,7 +6,7 @@ function processCall(){
     let callNo=document.getElementById('callNo').value;
     if(checkNumber(callNo)==0){
         document.form1.reset();
-        document.getElementById('m1').innerText="Enter a 10 digit number";
+        document.getElementById('m1').innerText="Enter a 10 digits number";
         return;
     }
     document.getElementById('m1').innerText="";
@@ -73,7 +73,7 @@ function callInfo(){
     let no=document.getElementById('findNo').value;
     if(checkNumber(no)==0){
         document.form2.reset();
-        document.getElementById('m2').innerText="Enter a 10 digit number";
+        document.getElementById('m2').innerText="Enter a 10 digits number";
         return;
     }
     document.getElementById('m2').innerText="";
