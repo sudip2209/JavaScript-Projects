@@ -52,9 +52,6 @@ function updateMap(key,val){
             tempArr.push(val);
             localStorage.myMap = JSON.stringify(Array.from(contactMap.entries()));
         }
-        // let temp=contactMap.get(key);
-        // temp.push(val);
-        // localStorage.setItem('myMap',temp);
     }
 }
 
