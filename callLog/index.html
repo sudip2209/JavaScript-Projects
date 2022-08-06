@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Call Log (Skart)</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <h3>Call Log</h3>
+        </div>
+        <div class="main">
+            <div class="child1">
+                <div class="c1d1">
+                    <div class="mini1">
+                         <form name="form1">
+                            <label for="pCall">Process Call</label>
+                            <input type="text" id="callNo" placeholder="Enter a number">
+                            <input type="button" value="submit" onclick="processCall()">
+                         </form>
+                         <p id="m1"></p>
+                    </div>
+                    <div class="mini2">
+                        <form name="form2">
+                            <label for="pCall">Call History</label>
+                            <input type="text" id="findNo" placeholder="Enter a number">
+                            <input type="button" value="submit" onclick="callInfo()">
+                         </form>
+                         <p id="m2"></p>
+                    </div>
+                </div>
+                <div class="c1d2">
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <td class="htr">Call History</td>
+                            </tr>
+                        </thead>
+                        <tbody id="cInfo">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="child2">
+                <div class="c2center">
+                    <table id="myTable">
+                        <thead>
+                            <tr>
+                                <td class="htr" colspan="2">Call Log</td>
+                            </tr>
+                        </thead>
+                        <tbody id="callLog">
+    
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
