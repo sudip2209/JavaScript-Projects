@@ -87,6 +87,7 @@ function callInfo(){
         document.form2.reset();
         return;
     }
+    document.getElementById('givenNo').innerText=`Call History (${no})`;
     let html='';
     for(let i=arr.length-1;i>=0;i--){
         html+=`<tr class="btr"><td>${arr[i]}</td></tr>`;
