@@ -27,7 +27,9 @@ function processCall(){
             localStorage.setItem('contactNo',JSON.stringify(arr));
         }
     }
-    updateMap(callNo,Date());
+    let currentDateTime=new Date();
+    let filterTimeDate=currentDateTime.getHours()+':'+currentDateTime.getMinutes()+':'+currentDateTime.getSeconds()+' '+currentDateTime.getDate()+'/'+(currentDateTime.getMonth()+1)+'/'+currentDateTime.getFullYear();
+    updateMap(callNo,filterTimeDate);
     printCallLog();
     document.form1.reset();
 }
